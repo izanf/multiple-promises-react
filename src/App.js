@@ -22,7 +22,7 @@ function App() {
       })
 
       const comics = await Promise.all(comicsPromise)
-      return ({ ...character, comics: comics.map((comic_1) => comic_1.data.results[0]) })
+      return ({ ...character, comics: comics.map((comic) => comic.data.results[0]) })
     })
 
     
